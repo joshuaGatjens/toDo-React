@@ -1,7 +1,12 @@
 import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import TodoApp from './pages/ToDoApp';
-import './'
+import TodoApp from './pages/ToDoApp/ToDoApp';
+// import Tasks from './components/task/Tasks';
+
+
+
+
+
 
 function App() {
 const router = createBrowserRouter([
@@ -18,34 +23,18 @@ const router = createBrowserRouter([
 
 
 
+
     <div className='Container'></div>
-        <h1>
-          To-Do-List (Again)
-        </h1>
 
     <div className='main-div'>
 
-      {/* --------------------PlaceHolder y Botón--------------------- */}
-      <div className='div.izq'>
 
 
-      </div>
-      </div>
 
-      {/* --------------------Contador--------------------- */}
-      <div className='div-der'>
+<div className=''></div>
 
-<b>
-  Tareas completadas
-</b>
-
-<div className='circulo'>
-  <div id='numero-tareas'>0</div>
 </div>
-      </div>
 
-
-      <div id='task-box' ></div>
 
       </header>
     </div>

@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "Si";
+  src: url("") format(truetype);
+}
+
+body {
+  background-image: url("../../../public/img/3S6o.gif");
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Si";
+}
+
+.titulo{
+  text-align: center;
+}
+.lado-der {
+  background-color: whitesmoke;
+  float: right;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin-right: 50px;
+  height: 70px;
+}
+
+.lado-izq {
+  float: left;
+}
+.taskBox {
+  margin-top: 200px;
+  border: 2px solid black;
+  min-height: 200px;
+}
+
+.centrar {
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 15px;
+  list-style: none;
+  text-align: center;
+  align-items: center;
+}
+
+
+/* --------------------------Botón eliminar-------------------------- */
+
+#add-button {
+  background-color: white;
+  color: black;
+  border-radius: 10em;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 1em 2em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid black;
+  box-shadow: 0 0 0 0 black;
+}
+
+#add-button:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 black;
+}
+
+#add-button:active {
+  transform: translateY(2px) translateX(1px);
+  box-shadow: 0 0 0 0 black;
+}
+
+#numero-tareas {
+  text-align: center;
+}
+
+.nht {
+  text-align: center;
+  margin-top: 100px;
+}
+/* -----------------------------checkbox--------------------------------- */
+
+.clear {
+  clear: both;
+}
+
+.checkBox {
+  display: block;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0px 0px 2px black;
+  background-color: white;
+}
+
+.checkBox div {
+  width: 60px;
+  height: 60px;
+  background-color: black;
+  top: -52px;
+  left: -52px;
+  position: absolute;
+  transform: rotateZ(45deg);
+  z-index: 100;
+}
+
+.checkBox input[type="checkbox"]:checked + div {
+  left: -10px;
+  top: -10px;
+}
+
+.checkBox input[type="checkbox"] {
+  position: absolute;
+  left: 50px;
+  visibility: hidden;
+}
+
+.transition {
+  transition: 300ms ease;
+}
+
+/* ------------------------------------------------------------------------------- */
